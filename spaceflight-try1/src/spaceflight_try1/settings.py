@@ -4,7 +4,7 @@ https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 
 # Instantiated project hooks.
 # For example, after creating a hooks.py and defining a ProjectHooks class there, do
-# from kedro.hooks import ProjectHooks
+# from spaceflight_try1.hooks import ProjectHooks
 # HOOKS = (ProjectHooks(),)
 
 # Installed plugins for which to disable hook auto-registration.

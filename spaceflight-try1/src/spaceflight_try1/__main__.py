@@ -1,5 +1,5 @@
-"""kedro file for ensuring the package is executable
-as `kedro` and `python -m kedro`
+"""spaceflight_try1 file for ensuring the package is executable
+as `spaceflight-try1` and `python -m spaceflight_try1`
 """
 import importlib
 from pathlib import Path

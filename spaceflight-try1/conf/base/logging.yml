@@ -34,7 +34,7 @@ loggers:
   kedro:
     level: INFO
 
-  kedro:
+  spaceflight_try1:
     level: INFO
 
 root:

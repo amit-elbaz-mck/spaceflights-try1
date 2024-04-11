@@ -1,6 +1,6 @@
 [tool.kedro]
-package_name = "kedro"
-project_name = "kedro"
+package_name = "spaceflight_try1"
+project_name = "spaceflight_try1"
 kedro_init_version = "0.18.13"
 
 [tool.isort]
@@ -9,7 +9,7 @@ profile = "black"
 [tool.pytest.ini_options]
 addopts = """
 --cov-report term-missing \
---cov src/kedro -ra"""
+--cov src/spaceflight_try1 -ra"""
 
 [tool.coverage.report]
 fail_under = 0
