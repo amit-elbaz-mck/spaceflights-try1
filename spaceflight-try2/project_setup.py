@@ -52,13 +52,13 @@ def setup(
     :returns: A fully prepared project for this demo.
     """
     # Set secrets:
-    _set_secrets(project=project)
-
+    # _set_secrets(project=project)
+    print(os.getcwd())
     # Set the project git source:
     source = os.environ["MLRUN_SOURCE"]
     if source:
         print(f"Project Source: {source}")
-        project.set_source(source=source, pull_at_runtime=True, workdir='spaceflight_try2')
+        project.set_source(source=source, pull_at_runtime=True, workdir="spaceflight-try2")
 
     # Log the initial workflow inputs
     project = log_inputs(project)
@@ -70,7 +70,7 @@ def setup(
     project.artifact_path = os.environ["ARTIFACT_PATH"]
 
     # Set the workflows:
-    project.set_workflow(name="main", workflow_path=".mlrun/workflow.py")
+    project.set_workflow(name="main", workflow_path= os.getcwd() + "/.mlrun/workflow.py", embed=True)
 
     # Run extra configurations defined in the 'project_setup_extras.py' file
     project, build_commands = run_extras(project, project.get_param("run_build"))
@@ -127,7 +127,7 @@ def _set_functions(project: mlrun.projects.MlrunProject):
         func=".mlrun/kedro_handler.py",
         name="kedro-handler",
         kind="job",
-        image="mlrun/mlrun:1.4.0",
+        image="mlrun/mlrun:1.6.0",
         with_repo=True,
         requirements_file="src/requirements.txt"
     )
