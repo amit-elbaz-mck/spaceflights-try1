@@ -9,7 +9,7 @@ profile = "black"
 [tool.pytest.ini_options]
 addopts = """
 --cov-report term-missing \
---cov src/spaceflight_try2 -ra"""
+--cov src/spaceflight_folder -ra"""
 
 [tool.coverage.report]
 fail_under = 0

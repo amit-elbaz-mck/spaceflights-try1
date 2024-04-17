@@ -58,7 +58,7 @@ def setup(
     source = os.environ["MLRUN_SOURCE"]
     if source:
         print(f"Project Source: {source}")
-        project.set_source(source=source, pull_at_runtime=True, workdir='kedro')
+        project.set_source(source=source, pull_at_runtime=True, workdir='spaceflight/spaceflight-folder')
 
     # Log the initial workflow inputs
     project = log_inputs(project)

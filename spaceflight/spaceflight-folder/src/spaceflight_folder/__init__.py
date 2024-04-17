@@ -1,4 +1,4 @@
-"""spaceflight_try2
+"""spaceflight_folder
 """
 
 __version__ = "0.1"

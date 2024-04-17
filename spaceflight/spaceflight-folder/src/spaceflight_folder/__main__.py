@@ -1,5 +1,5 @@
-"""spaceflight_try2 file for ensuring the package is executable
-as `spaceflight-try2` and `python -m spaceflight_try2`
+"""spaceflight_folder file for ensuring the package is executable
+as `spaceflight-folder` and `python -m spaceflight_folder`
 """
 import importlib
 from pathlib import Path

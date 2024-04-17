@@ -58,7 +58,7 @@ def kfpipeline() -> None:
         params={"args": ["run", "-e", "local_mlrun", *['-n', 'create_model_input_table_node']]},
         verbose=True,
         auto_build=True,
-    ).after(preprocess_shuttles_node, preprocess_companies_node)
+    ).after(preprocess_companies_node, preprocess_shuttles_node)
 
     split_data_node = project.run_function(
         function="kedro_handler",

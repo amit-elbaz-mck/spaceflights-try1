@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-# spaceflight_try2 documentation build
+# spaceflight_folder documentation build
 # configuration file, created by sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its
@@ -21,11 +21,11 @@
 import re
 
 from kedro.framework.cli.utils import find_stylesheets
-from spaceflight_try2 import __version__ as release
+from spaceflight_folder import __version__ as release
 
 # -- Project information -----------------------------------------------------
 
-project = "spaceflight_try2"
+project = "spaceflight_folder"
 author = "Kedro"
 
 # The short X.Y version.
@@ -121,7 +121,7 @@ html_show_copyright = False
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "spaceflight_try2doc"
+htmlhelp_basename = "spaceflight_folderdoc"
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -149,8 +149,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "spaceflight_try2.tex",
-        "spaceflight_try2 Documentation",
+        "spaceflight_folder.tex",
+        "spaceflight_folder Documentation",
         "Kedro",
         "manual",
     )
@@ -163,8 +163,8 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "spaceflight_try2",
-        "spaceflight_try2 Documentation",
+        "spaceflight_folder",
+        "spaceflight_folder Documentation",
         [author],
         1,
     )
@@ -178,11 +178,11 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "spaceflight_try2",
-        "spaceflight_try2 Documentation",
+        "spaceflight_folder",
+        "spaceflight_folder Documentation",
         author,
-        "spaceflight_try2",
-        "Project spaceflight_try2 codebase.",
+        "spaceflight_folder",
+        "Project spaceflight_folder codebase.",
         "Data-Science",
     )
 ]

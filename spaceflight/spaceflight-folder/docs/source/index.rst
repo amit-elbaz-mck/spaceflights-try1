@@ -1,8 +1,8 @@
-.. spaceflight_try2 documentation master file, created by sphinx-quickstart.
+.. spaceflight_folder documentation master file, created by sphinx-quickstart.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to project spaceflight_try2's API docs!
+Welcome to project spaceflight_folder's API docs!
 =============================================
 
 .. toctree::
