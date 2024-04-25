@@ -40,7 +40,6 @@ def kfpipeline() -> None:
         params={"args": ["run", "-e", "local_mlrun", *['-n', 'preprocess_companies_node']]},
         verbose=True,
         auto_build=True,
-        workdir="spaceflight-folder"
     ).after()
 
     preprocess_shuttles_node = project.run_function(
@@ -50,7 +49,6 @@ def kfpipeline() -> None:
         params={"args": ["run", "-e", "local_mlrun", *['-n', 'preprocess_shuttles_node']]},
         verbose=True,
         auto_build=True,
-        workdir="spaceflight-folder"
     ).after()
 
     create_model_input_table_node = project.run_function(
